@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shop online</title>
+</head>
+<body>
+    <section class="products">
+        <h1>Product list</h1>
+        <ul class="product-list">
+            <li>
+                <strong>Product 1</strong> - 9.99 <button class="btn-buy-product" data-name="Product 1" data-price="9.99">Buy !</button>
+            </li>
+            <li>
+                <strong>Product 2</strong> - 7.50 <button class="btn-buy-product" data-name="Product 2" data-price="7.50">Buy !</button>
+            </li>
+            <li>
+                <strong>Product 3</strong> - 109000.00 <button class="btn-buy-product" data-name="Product 3" data-price="109000.00">Buy !</button>
+            </li>
+        </ul>
+    </section>
+<section class="basket">
+    <h1>Basket</h1>
+    <ul class="basket-list"></ul>
+    <button class="btn-buy-all" disabled>Submit your order</button>
+</section>
+    <section class="admin-add-product">
+        <h1>Administration: Add product</h1>
+        <form class="form-add-product">
+            <label>
+                <input type="text" name="product-name" placeholder="Enter the name..." required>
+            </label>
+            <label>
+                <input type="number" name="product-price" placeholder="Tell the price..." required>
+            </label>
+            <button type="submit">Add</button>
+        </form>
+
+    </section>
+
+
+    <script src="src/basket.js"></script>
+    <script src="src/ui.js"></script>
+    <script src="src/admin-ui.js"></script>
+</body>
+</html>
